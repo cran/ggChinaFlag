@@ -1,0 +1,14 @@
+02a0e3b1ab63623dd2f2e5aa1de8050e *DESCRIPTION
+179f78d98ceb825650cf308c7c5278d0 *NAMESPACE
+965054b07c41ed907fd6de33bc7f2777 *R/flag_interface.R
+9d6ee381be8b8fbe351a03650a305ac2 *R/globals.R
+8504771522ee6db10a76f7d31be36b8a *R/plot_national_flag.R
+b3de4b82b7039994b3bd1d4d093d6db4 *R/plot_party_flag.R
+e5e4f74ad5f5dd62d5f3333bc99f2ae1 *man/FlagStorage.Rd
+2194df04ee82279c884c4166cc16be73 *man/plotCNFlag.Rd
+ed3e8d44f6b9d61c75e7f6a02fbbb1a3 *man/plot_CCP.Rd
+8ffdd5d0f3f929c0cce048cb6fc76a4b *man/plot_Han18Star.Rd
+d5a134c0a696c3e3d91a7c34bc2ae07a *man/plot_KMT.Rd
+27f673e28e0c970bf3e54a8650c36d95 *man/plot_P.R.CHINA_flag.Rd
+408f8432c80059d80ed2b0582a8a3018 *man/plot_ROC_Beiyang_flag.Rd
+f189774abbc8ba554be4087024b1dbcd *man/plot_ROC_KMT_flag.Rd
