@@ -2,7 +2,7 @@
 % Please edit documentation in R/flag_interface.R
 \name{plotCNFlag}
 \alias{plotCNFlag}
-\title{Plot a Chinese national or historical flag by name}
+\title{Plot a Chinese national, historical, party, or regional flag by name}
 \usage{
 plotCNFlag(input, label = TRUE)
 }
@@ -27,8 +27,9 @@ The function obtains the built-in name list via \code{\link{FlagStorage}},
 detects the input language, matches the name, and forwards to one of
 \code{\link{plot_P.R.CHINA_flag}}, \code{\link{plot_ROC_KMT_flag}},
 \code{\link{plot_ROC_Beiyang_flag}}, \code{\link{plot_Han18Star}},
-\code{\link{plot_CCP}} or \code{\link{plot_KMT}}. An unrecognised name
-raises an error.
+\code{\link{plot_CCP}}, \code{\link{plot_KMT}},
+\code{\link{plot_HK_SAR_flag}} or \code{\link{plot_Macao_SAR_flag}}. An
+unrecognised name raises an error.
 }
 \examples{
 \donttest{
@@ -36,6 +37,8 @@ plotCNFlag("Flag of the People's Republic of China")
 plotCNFlag("Flag of the Kuomintang (Blue Sky and White Sun flag)", label = FALSE)
 plotCNFlag("Five-Color Flag of the Beiyang Government of the Republic of China")
 plotCNFlag("Iron-Blood 18-Star Flag of the Wuchang Uprising")
+plotCNFlag("Regional Flag of the Hong Kong Special Administrative Region")
+plotCNFlag("Regional Flag of the Macao Special Administrative Region", label = FALSE)
 }
 
 }
