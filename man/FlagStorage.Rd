@@ -11,11 +11,12 @@ FlagStorage(lang = c("Chinese", "English"))
 Either \code{"Chinese"} (default) or \code{"English"}.}
 }
 \value{
-A \code{list} of three named character vectors. With
+A \code{list} of named character vectors. With
   \code{lang = "Chinese"} the elements hold the Chinese national-flag,
-  political-party, and SAR regional-flag names; with \code{lang = "English"}
-  they are named \code{National Flags}, \code{Political Parties}, and
-  \code{Regional Flags}. The strings in each vector correspond one-to-one to
+  political-party, regional-flag, organisation, and military flag names;
+  with \code{lang = "English"} they are named \code{National Flags},
+  \code{Political Parties}, \code{Regional Flags}, \code{Organizations},
+  and \code{Military}. The strings in each vector correspond one-to-one to
   the underlying plotting functions.
 }
 \description{
@@ -23,8 +24,10 @@ Provides a standardised list of flag names used by \code{\link{plotCNFlag}}
 and related functions. It contains the names of the national flag of the
 People's Republic of China, several historical flags of the Republic of
 China, the party flags of the Communist Party of China and the Kuomintang,
-and the regional flags of the Hong Kong and Macao Special Administrative
-Regions, in both Chinese and English.
+the regional flags of the Hong Kong and Macao Special Administrative
+Regions, the flag of the Communist Youth League of China, and the flag of
+the People's Liberation Army and its service branches, in both Chinese and
+English.
 }
 \examples{
 # Chinese names

@@ -2,7 +2,8 @@
 % Please edit documentation in R/flag_interface.R
 \name{plotCNFlag}
 \alias{plotCNFlag}
-\title{Plot a Chinese national, historical, party, or regional flag by name}
+\title{Plot a Chinese national, historical, party, regional, organisation, or
+military flag by name}
 \usage{
 plotCNFlag(input, label = TRUE)
 }
@@ -24,12 +25,14 @@ function based on the supplied flag name (Chinese or English) and returns a
 }
 \details{
 The function obtains the built-in name list via \code{\link{FlagStorage}},
-detects the input language, matches the name, and forwards to one of
+detects the input language, matches the name, and forwards to the
+appropriate plotting function. Supported functions include
 \code{\link{plot_P.R.CHINA_flag}}, \code{\link{plot_ROC_KMT_flag}},
 \code{\link{plot_ROC_Beiyang_flag}}, \code{\link{plot_Han18Star}},
 \code{\link{plot_CCP}}, \code{\link{plot_KMT}},
-\code{\link{plot_HK_SAR_flag}} or \code{\link{plot_Macao_SAR_flag}}. An
-unrecognised name raises an error.
+\code{\link{plot_HK_SAR_flag}}, \code{\link{plot_Macao_SAR_flag}},
+\code{\link{plot_CYLC}}, and \code{\link{plot_PLA}} (for the general PLA
+flag and its service branches). An unrecognised name raises an error.
 }
 \examples{
 \donttest{
@@ -39,10 +42,14 @@ plotCNFlag("Five-Color Flag of the Beiyang Government of the Republic of China")
 plotCNFlag("Iron-Blood 18-Star Flag of the Wuchang Uprising")
 plotCNFlag("Regional Flag of the Hong Kong Special Administrative Region")
 plotCNFlag("Regional Flag of the Macao Special Administrative Region", label = FALSE)
+plotCNFlag("\u4e2d\u56fd\u5171\u4ea7\u4e3b\u4e49\u9752\u5e74\u56e2\u56e2\u65d7")
+plotCNFlag("\u4e2d\u56fd\u4eba\u6c11\u89e3\u653e\u519b\u6d77\u519b\u519b\u65d7")
+plotCNFlag("PLA Rocket Force Flag", label = FALSE)
 }
 
 }
 \seealso{
 \code{\link{FlagStorage}} for the name list, and the underlying
-  plotting functions such as \code{\link{plot_P.R.CHINA_flag}}.
+  plotting functions such as \code{\link{plot_P.R.CHINA_flag}},
+  \code{\link{plot_CYLC}}, and \code{\link{plot_PLA}}.
 }
